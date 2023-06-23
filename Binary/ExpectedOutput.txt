@@ -1,0 +1,96 @@
+﻿------------------Shift Operator Test------------------
+assigning 1010 to x
+printing x (0000 0000 0000 1010): 0000 0000 0000 1010
+shifting x by 4 places to the left
+printing x (0000 0000 1010 0000): 0000 0000 1010 0000
+shifting x 4 places to the right
+printing x (0000 0000 0000 1010): 0000 0000 0000 1010
+shifting x 12 places to the left
+printing x (1010 0000 0000 0000): 1010 0000 0000 0000
+shifting x 4 places to the left
+printing x (0000 0000 0000 0000): 0000 0000 0000 0000
+
+------------------Unary Operator Test------------------
+assigning 1010 to x
+printing x (0000 0000 0000 1010): 0000 0000 0000 1010
+printing x in decimal (10): 10
+1's complement: printing ~x (1111 1111 1111 0101): 1111 1111 1111 0101
+printing ~x in decimal (-11): -11
+2's complement: printing -x (1111 1111 1111 0110): 1111 1111 1111 0110
+printing -x in decimal (-10): -10
+
+----------------Arithmetic Operator Test----------------
+assigning 10 to x
+assigning -12 to y
+printing x (0000 0000 0000 1010): 0000 0000 0000 1010
+printing x in decimal (10): 10
+printing y (1111 1111 1111 0100): 1111 1111 1111 0100
+printing y in decimal (-12): -12
+printing x + y (1111 1111 1111 1110): 1111 1111 1111 1110
+printing x + y in decimal (-2): -2
+printing x - y (0000 0000 0001 0110): 0000 0000 0001 0110
+printing x - y in decimal (22): 22
+printing x * y (1111 1111 1000 1000): 1111 1111 1000 1000
+printing x * y in decimal (-120): -120
+printing -x * y (0000 0000 0111 1000): 0000 0000 0111 1000
+printing -x * y in decimal (120): 120
+printing x / y (0000 0000 0000 0011): 0000 0000 0000 0011
+printing x / y in decimal (3): 3
+printing x % y (0000 0000 0000 0001): 0000 0000 0000 0001
+printing x / y in decimal (1): 1
+printing x / y (1111 1111 1111 1101): 1111 1111 1111 1101
+printing x / y in decimal (-3): -3
+printing x % y (0000 0000 0000 0001): 0000 0000 0000 0001
+printing x / y in decimal (1): 1
+printing x / y (1111 1111 1111 1101): 1111 1111 1111 1101
+printing x / y in decimal (-3): -3
+printing x % y (1111 1111 1111 1111): 1111 1111 1111 1111
+printing x / y in decimal (-1): -1
+printing x / y (0000 0000 0000 0011): 0000 0000 0000 0011
+printing x / y in decimal (3): 3
+printing x % y (1111 1111 1111 1111): 1111 1111 1111 1111
+printing x / y in decimal (-1): -1
+printing x / y (0000 0000 0000 0010): 0000 0000 0000 0010
+printing x / y in decimal (2): 2
+printing x % y (0000 0000 0000 1011): 0000 0000 0000 1011
+printing x / y in decimal (11): 11
+printing x / y (1111 1111 1111 1110): 1111 1111 1111 1110
+printing x / y in decimal (-2): -2
+printing x % y (0000 0000 0000 1011): 0000 0000 0000 1011
+printing x / y in decimal (11): 11
+printing x / y (1111 1111 1111 1110): 1111 1111 1111 1110
+printing x / y in decimal (-2): -2
+printing x % y (1111 1111 1111 0101): 1111 1111 1111 0101
+printing x / y in decimal (-11): -11
+printing x / y (0000 0000 0000 0010): 0000 0000 0000 0010
+printing x / y in decimal (2): 2
+printing x % y (1111 1111 1111 0101): 1111 1111 1111 0101
+printing x / y in decimal (-11): -11
+
+----------------Relational Operator Test----------------
+assigning 10 to x
+assigning -12 to y
+assigning 2 to z
+printing x (0000 0000 0000 1010): 0000 0000 0000 1010
+printing x in decimal (10): 10
+printing y (1111 1111 1111 0100): 1111 1111 1111 0100
+printing y in decimal (-12): -12
+printing z (0000 0000 0000 0010): 0000 0000 0000 0010
+printing z in decimal (2): 2
+printing x == y (False): False
+printing x != y (True): True
+printing -x - z == y (True): True
+printing x < y (False): False
+printing y < x (True): True
+printing x < z (False): False
+printing z < x (True): True
+printing -x < x + y (True): True
+printing x > y (True): True
+printing y > x (False): False
+printing x > z (True): True
+printing z > x (False): False
+printing -z > x + y (False): False
+printing x <= y (False): False
+printing x >= y (True): True
+printing -z <= x + y (True): True
+printing -z >= x + y (True): True
